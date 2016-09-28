@@ -22,11 +22,11 @@ public class Driver {
 	}
 	
 	public static void Initialize() {
-		File driverDiv = new File("src/test/resources/ChromeDriver");
+		File resoursesDiv = new File("src/test/resources/ChromeDriver");
 		
-		File dr = new File (driverDiv, "chromedriver.exe");
+		File chromeDriver = new File (resoursesDiv, "chromedriver.exe");
 		
-		System.setProperty("webdriver.chrome.driver", dr.getAbsolutePath());
+		System.setProperty("webdriver.chrome.driver", chromeDriver.getAbsolutePath());
 		
 		Instance = new ChromeDriver();
 		TurnOnWait();
